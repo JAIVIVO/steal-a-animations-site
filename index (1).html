@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steal a Animations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+  <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+  <div id="secretMessage" class="secret-message" aria-hidden="true">
+    <div class="secret-message-card">
+      <div>CONGRATS, YOU WON BRAINROT STOCK 2/3!!!</div>
+      <div class="secret-message-subtitle">WRITE TO JAIVIVO ON DISCORD!</div>
+    </div>
+  </div>
+
+  <main class="app-shell">
+    <header class="hero">
+      <button id="secretButton" class="secret-button" type="button" aria-label="Secret surprise">✦</button>
+      <div class="hero-brand">
+        <img class="hero-logo" src="assets/logo.png" alt="Steal a Animations logo" />
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Game Update Hub</p>
+        <h1>Steal a Animations</h1>
+        <p class="hero-subtitle">Patch notes and latest changes.</p>
+      </div>
+      <div class="hero-badge">Live Change Log</div>
+    </header>
+
+    <section class="online-panel" aria-live="polite">
+      <div class="online-panel-left">
+        <p class="online-label">Online Players</p>
+        <p id="onlineCount" class="online-count">...</p>
+        <p id="onlineMeta" class="online-meta">Loading live Roblox data...</p>
+      </div>
+      <button id="refreshOnlineButton" class="online-refresh-button" type="button">Refresh</button>
+    </section>
+
+    <section class="updates-layout">
+      <aside class="versions-panel">
+        <div class="panel-header">
+          <h2>Versions</h2>
+          <span>Latest builds</span>
+        </div>
+        <div id="versionList" class="version-list" aria-label="Patch versions"></div>
+      </aside>
+
+      <section class="details-panel">
+        <div class="panel-header">
+          <h2 id="detailsVersion">Version</h2>
+          <span id="detailsDate">Release date</span>
+        </div>
+
+        <div class="meta-row">
+          <span class="meta-pill" id="detailsTag">Update</span>
+        </div>
+
+        <div class="changes-card">
+          <h3>Changes</h3>
+          <div id="changesContent" class="changes-content"></div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer-links">
+      <a class="footer-button" href="https://discord.gg/XKnsjCn2jM" target="_blank" rel="noreferrer" data-icon="✦">
+        <span class="footer-button-label">SAA Discord</span>
+        <span class="footer-button-subtitle">Join the community</span>
+      </a>
+      <a class="footer-button" href="https://www.roblox.com/games/136564450606437/Steal-A-Animations" target="_blank" rel="noreferrer" data-icon="▶">
+        <span class="footer-button-label">Game Link</span>
+        <span class="footer-button-subtitle">Play on Roblox</span>
+      </a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
